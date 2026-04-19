@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: t3-scanner
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python t3_scanner.py
+    plan: free
